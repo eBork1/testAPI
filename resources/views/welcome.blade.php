@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Develofill</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title">
-                    ETB-Web Testing API
+                    DeveloFill Testing API
                 </div>
                 <p>A RESTFUL API for populating your website with sample text, images, and other content while in development.</p>
 
