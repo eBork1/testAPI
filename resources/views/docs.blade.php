@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Docs</title>
-</head>
-<body>
-    <p class="display-2">Docs</p>
-    <p>
-        example url for the test api: <strong>/api/employees/{id}</strong>
-    </p>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title', 'Docs')
+
+@section('content')
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <p class="display-2">Documentation</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Here is an example url for our test api:
+                    <strong>http://develofill.com/api/<code>content</code>/<code>{id}</code></strong>
+                </p>
+            </div>
+        </div>
+    </div>
+@endsection
