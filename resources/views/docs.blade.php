@@ -26,7 +26,12 @@
         <div class="row">
             <div class="col-12">
                 <p class="pt-3">
-                    Using <a href="https://github.com/axios/axios" target="_blank" rel="noreferrer noopener">Axios</a> <strong>(preferred)</strong>
+                    Using <a
+                            href="https://github.com/axios/axios"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            >Axios</a>
+                            <strong>(preferred)</strong>
                 </p>
             </div>
         </div>
@@ -50,6 +55,29 @@
                 <p class="pt-3">
                     Using <strong>Ajax</strong>
                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 mx-auto text-left bg-light">
+                $.ajax({<br>
+                type: 'GET',<br>
+                dataType: 'json'<br>
+                url: 'http://127.0.0.1:8000/api/employees',<br>
+                headers: {'api_token': <code>your api token</code>},<br>
+                success: function (response) {<br>
+                console.log(response)<br>
+                }<br>
+                error: function (error) {<br>
+                console.log(error)<br>
+                }<br>
+                });<br>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3>
+                    Get Employees Data
+                </h3>
             </div>
         </div>
     </div>
