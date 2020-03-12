@@ -17,8 +17,9 @@ class CreateEmployeesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->tinyInteger('age');
-            $table->string('favorite color');
-            $table->binary('profile');
+            $table->string('favorite_color');
+            $table->string('job_title');
+            $table->binary('profile')->nullable();
             $table->timestamps();
         });
     }
