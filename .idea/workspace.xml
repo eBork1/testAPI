@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cf96dee1-90cc-4204-8cbf-00ff17a36018" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/EmployeeFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/EmployeeFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_28_003747_create_employees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_28_003747_create_employees_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/docs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/docs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,18 +142,22 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YuVdgRTZwZwFpj9PMK5ICCmBAM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -166,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583792554440</updated>
-      <workItem from="1583792558720" duration="12523000" />
+      <workItem from="1583792558720" duration="19246000" />
     </task>
     <servers />
   </component>
@@ -182,9 +191,10 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="309" y="36" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1583793979164" />
-    <state x="226" y="47" key="SettingsEditor" timestamp="1583794298598">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="54" y="-881" key="SettingsEditor" timestamp="1583957893674">
+      <screen x="-239" y="-1057" width="1920" height="1057" />
     </state>
+    <state x="54" y="-881" key="SettingsEditor/0.23.1440.821/-239.-1057.1920.1057@-239.-1057.1920.1057" timestamp="1583957893674" />
     <state x="226" y="47" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1583794298598" />
     <state x="399" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1583792591012">
       <screen x="0" y="23" width="1440" height="821" />
