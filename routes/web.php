@@ -20,3 +20,8 @@ Route::get('/docs', 'DocsController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/logout', 'AuthenticationController@logout')->name('logout');
+
+Route::get('/profile', 'ProfilesController@index')->name('profile');
+
