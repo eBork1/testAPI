@@ -12,7 +12,7 @@ class AuthenticationController extends Controller
 {
    public function login(Request $request) {
        $user = User::where('email', $request->email)->first();
-       
+
        if ($user) {
            if ($user->validateForPassportPasswordGrant($request->password) == $user->password) {
                $token = $user->createToken('Laravel Password Grant Client')->accessToken;
@@ -33,9 +33,11 @@ class AuthenticationController extends Controller
    }
    public function logout(Request $request)
    {
-       $request->user()->token()->revoke();
-       $request->user()->token()->delete();
-       $response = 'You have been successfully logged out!';
-       return response($response, 200);
+       auth()->logout();
+//       $request->user()->token()->revoke();
+//       $request->user()->token()->delete();
+//       $response = 'You have been successfully logged out!';
+//       return response($response, 200);
+       return redirect('/');
    }
 }
