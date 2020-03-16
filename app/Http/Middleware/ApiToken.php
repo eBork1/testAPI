@@ -17,6 +17,7 @@ class ApiToken
     public function handle($request, Closure $next)
     {
         $user_token = $request->header('api_token');
+
         $exists = DB::table('oauth_access_tokens')->where('id', $user_token)->first();
         if (!$exists) {
             return response()->json('Unauthorized - 401', 401);
