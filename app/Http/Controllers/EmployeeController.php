@@ -7,79 +7,19 @@ use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function index(Request $request)
     {
-        return employee::All();
+        $employeeCount = $request->count;
+        if ($employeeCount == null) {
+            return employee::All();
+        }else{
+            return employee::All()->take($employeeCount);
+        }
+
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-     public function getByID($id)
-     {
-         return employee::where('id', $id)->get();
-     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function getByID($id)
     {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\employee  $employee
-     * @return \Illuminate\Http\Response
-     */
-    public function show(employee $employee)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\employee  $employee
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(employee $employee)
-    {
-        //
-    }
-
-
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\employee  $employee
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(employee $employee)
-    {
-        //
+        return employee::where('id', $id)->get();
     }
 }
