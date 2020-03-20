@@ -15,7 +15,6 @@ class EmployeeController extends Controller
         }else{
             return employee::All()->take($employeeCount);
         }
-
     }
 
     public function getByID($id)
