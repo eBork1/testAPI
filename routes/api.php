@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 */
 
 // Auth + Login
-Route::post('/login', 'AuthenticationController@login')->name('login');
+//Route::post('/login', 'AuthenticationController@login')->name('login');
 
 
 Route::middleware('auth:api')->group(function () {
