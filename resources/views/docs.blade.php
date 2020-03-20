@@ -81,7 +81,8 @@
                 <br>
                 <p>
                     To make a call to the API, you must send your API token as a header in your request. To get
-                    a token, you can <a href="{{ url('/register') }}">sign up</a> for an account and find your token in your profile. This token is a
+                    a token, you can <a href="{{ url('/register') }}">sign up</a> for an account and find your token in
+                    your profile. This token is a
                     personal access token meaning it does not refresh or follow a full authorization flow, so keep
                     it safe. Avoid exposing it through client sided code and do not share it.
                 </p>
@@ -104,6 +105,30 @@
         <div class="row">
             <div class="col-5 mx-auto bg-light">
                 http://127.0.0.1:8000/api/employees
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <p>
+                    Get <strong>specific</strong> employee
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 mx-auto bg-light">
+                http://127.0.0.1:8000/api/employees/<code>{id}</code>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <p>
+                    <strong>Params</strong>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 mx-auto bg-light">
+                <strong>count</strong>: specify the number of employees you want.
             </div>
         </div>
     </div>
