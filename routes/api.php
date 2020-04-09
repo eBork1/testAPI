@@ -39,6 +39,9 @@ Route::middleware('api_token')->group(function () {
 | Blog Posts
 |--------------------------------------------------------------------------
 */
+Route::middleware('api_token')->group(function () {
+    Route::get('/blogposts', 'BlogController@index');
+});
 
 /*
 |--------------------------------------------------------------------------
